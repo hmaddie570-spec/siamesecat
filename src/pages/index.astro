@@ -7,21 +7,11 @@ import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
 ---
 
-<!DOCTYPE html>
-  <hmtl lang="html">
-<head>
-<title>Purrvana</title>
-</head>
-<body>
-  <h1> Purrvana</h1>
-</body>
-</hmtl>
-
-
-
-
-
-</hmtl>
-
-
-</DOCTYPE>
+<Layout title="Astro Starter">
+  <Container>
+    <Image src={AstroLogo} alt="" />
+    <h1>Purrvana</h1>
+    <SampleComponent text="This is a sample component!" />
+    <SampleMarkdown />
+  </Container>
+</Layout>
