@@ -5,13 +5,132 @@ import Container from "@components/Container.astro";
 import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
 import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
+import AppleheadCat from "@assets/images/Appleheadcat.png"
+import OgCat from "@assets/images/OgCat.png";
+import Wedge from "@assets/images/Wedge.png"
+import SealPoint from "@assets/images/SealPoint.png"
+import ChocolatePoint from "@assets/images/ChocolatePoint.png"
+import BluePoint from "@assets/images/BluePoint.png"
+import LilacPoint from "@assets/images/LilacPoint.png"
 ---
 
 <Layout title="Astro Starter">
   <Container>
-    <Image src={AstroLogo} alt="" />
+    <header>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Purrvana - Siamese Cats</title>
+      <meta name="description" content="A comprehensive guide to Siamese cat breeds." />
+    <Image src={AstroLogo} alt="f" />
     <h1>Purrvana</h1>
-    <SampleComponent text="This is a sample component!" />
-    <SampleMarkdown />
+<nav>
+        <h2 class="nav-branding">Purrvana</h2>
+        <div class="nav-items">
+          <a href="#cat" class="nav-btn">Types Of Siamese Cats</a>
+          <a href="#personality" class="nav-btn">Personality</a>
+          <a href="#care" class="nav-btn">Care</a>
+        </div>
+      </nav>
+      <section class="section-activity" id="Types Of Siamese Cats"></section>
+    <p>Siamese Cats </p>
+    <h1> 1. Appleheaded Siamese Cats</h1>
+    <Image src={AppleheadCat} alt="Applehead Siamese Cat" />
+    <p>
+      Applehead Siamese cats are known for their rounded heads, large ears, and
+      almond-shaped blue eyes. They have a more traditional appearance compared
+      to the modern Siamese, with a sturdy build and a short, fine coat. Their
+      coloration typically includes a cream or fawn body with darker points on
+      the ears, face, paws, and tail.
+    </p>
+
+    <h1 >2. Traditional Siamese Cat</h1>
+    <Image src={OgCat} alt="Traditional Siamese Cat" />
+    <p>
+      Traditional Siamese cats, also known as "old-style" or "classic" Siamese,
+      have a more rounded body and a less extreme wedge-shaped head compared to
+      modern Siamese cats. They often have a more robust build and a slightly
+      longer coat. Their coloration is similar to that of modern Siamese cats,
+      with a light-colored body and darker points, but the contrast may be less
+      pronounced.
+    </p>
+    <h1> Modern Wedge Siamese Cat </h1>
+    <Image src={Wedge} alt="Wedge Siamese Cat" />
+    <p>
+      Modern Wedge Siamese cats are characterized by their sleek, slender bodies
+      and long, wedge-shaped heads. They have large ears that are set wide apart
+      and striking blue almond-shaped eyes. Their coat is short and fine, with a
+      light-colored body and darker points on the ears, face, paws, and tail.
+      Modern Wedge Siamese cats are known for their elegant appearance and
+      vocal personalities.
+    </p>
+    <h1>4. Seal Point Siamese Cat</h1>
+    <Image src={SealPoint} alt="Seal Point Siamese Cat" />
+    <p>
+      Seal Point Siamese cats are one of the most common and recognizable types
+      of Siamese cats. They have a cream or fawn-colored body with dark brown
+      (seal) points on their ears, face, paws, and tail. Their eyes are
+      striking blue, and they have a sleek, slender body with a wedge-shaped
+      head. Seal Point Siamese cats are known for their affectionate and social
+      nature.
+    </p>
+    <h1>5. Chocolate Point Siamese Cat</h1>
+    <Image src={ChocolatePoint} alt="Chocolate Point Siamese Cat" />
+    <p>
+      Chocolate Point Siamese cats have a light fawn or cream-colored body with
+      rich chocolate-colored points on their ears, face, paws, and tail. Their
+      eyes are a vivid blue, and they possess the sleek, slender body and wedge-shaped
+      head typical of Siamese cats. Chocolate Point Siamese cats are known for
+      their playful and affectionate personalities.
+    </p>
+    <h1>6. Blue Point Siamese Cat</h1>
+    <Image src={BluePoint} alt="Blue Point Siamese Cat" />
+    <p>
+      Blue Point Siamese cats feature a light gray or bluish-white body with
+      darker blue-gray points on their ears, face, paws, and tail. Their eyes 
+      are a striking blue, and they have the characteristic sleek, slender body
+      and wedge-shaped head of Siamese cats. Blue Point Siamese cats are known
+      for their gentle and affectionate nature.
+    </p>  
+    <h1>7. Lilac Point Siamese Cat</h1>
+    <Image src={LilacPoint} alt="Lilac Point Siamese Cat" />
+    <p>
+      Lilac Point Siamese cats have a pale, pinkish-gray body with lilac-colored
+      points on their ears, face, paws, and tail. Their eyes are a vivid blue,
+      and they possess the sleek, slender body and wedge-shaped head typical of
+      Siamese cats. Lilac Point Siamese cats are known for their affectionate
+      and social personalities.
+    </p>  
+
+
+  <section class="section-activity" id="Personality"></section>
+  <div class="content">
+    <h2>Personality</h2>
+    <p>
+      Siamese cats are known for their affectionate and social nature. They are
+      highly vocal and enjoy interacting with their human companions. Siamese
+      cats are intelligent and curious, often seeking out new experiences and
+      challenges. They thrive on attention and can become quite attached to their
+      owners. Siamese cats are also playful and energetic, making them great
+      companions for families and individuals alike.
+    </p>
+  </div>    
+    
+
+    <section class="section-activity" id="Care"></section>
+    <div class="content">
+      <h2>Care</h2>
+      <p>
+        Caring for a Siamese cat involves providing a balanced diet, regular
+        exercise, and routine veterinary care. Siamese cats have short coats that
+        require minimal grooming, but regular brushing can help reduce shedding and
+        keep their coat healthy. It's important to provide mental stimulation and
+        interactive play to keep them engaged. Siamese cats are prone to certain
+        health issues, so regular check-ups with a veterinarian are essential to
+        ensure their well-being.
+      </p>
+    </div>    
+    <SampleComponent client:load />
   </Container>
+  
 </Layout>
+
