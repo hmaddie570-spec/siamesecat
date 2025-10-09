@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import SampleComponent from "@components/SampleComponent.astro";
 import Container from "@components/Container.astro";
-import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
+
 import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
 import OgCat from "@assets/images/OgCat.png";
@@ -18,13 +18,24 @@ import Accordian from "@components/site/Accordian.astro";
 
 <Layout title="Purrvana - Siamese Cats" description="A comprehensive guide to Siamese cat breeds.">
   <Container>
-    <header>
-      <meta charset="UTF-8" />
+    <head>
+       
+       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Purrvana - Siamese Cats</title>
+      <title>Purrvana </title>
       <meta name="description" content="A comprehensive guide to Siamese cat breeds." />
-    <Image src={AstroLogo} alt="f" />
-    <h1>Purrvana</h1>
+    </head>
+
+    <header>
+     
+    
+    
+
+
+
+
+
+
 <nav>
         <h2 class="nav-branding">Purrvana</h2>
         <div class="nav-items">
@@ -33,10 +44,13 @@ import Accordian from "@components/site/Accordian.astro";
           <a href="#care" class="nav-btn">Purrfect</a>
         </div>
       </nav>
+
+
       <section class="types" id="Types Of Siamese Cats"></section>
-    <p>Siamese Cats </p>
+   
     <h1> 1. Appleheaded Siamese Cats</h1>
-    <Image src={AppleHead} alt="Applehead Siamese Cat" />
+    
+  <Image src={AppleHead} alt="Applehead Siamese Cat" class="applehead-cat-img" />
     <p>
       Applehead Siamese cats are known for their rounded heads, large ears, and
       almond-shaped blue eyes. They have a more traditional appearance compared
@@ -54,7 +68,7 @@ import Accordian from "@components/site/Accordian.astro";
     <section class="types" id="types"></section>
 
     <h1 >2. Traditional Siamese Cat</h1>
-    <Image src={OgCat} alt="Traditional Siamese Cat" />
+  <Image src={OgCat} alt="Traditional Siamese Cat" class="traditional-cat-img" />
     <p>
       Traditional Siamese cats, also known as "old-style" or "classic" Siamese,
       have a more rounded body and a less extreme wedge-shaped head compared to
@@ -64,7 +78,7 @@ import Accordian from "@components/site/Accordian.astro";
       pronounced.
     </p>
     <h1> Modern Wedge Siamese Cat </h1>
-    <Image src={Wedge} alt="Wedge Siamese Cat" />
+  <Image src={Wedge} alt="Wedge Siamese Cat" class="wedge-cat-img" />
     <p>
       Modern Wedge Siamese cats are characterized by their sleek, slender bodies
       and long, wedge-shaped heads. They have large ears that are set wide apart
@@ -74,7 +88,7 @@ import Accordian from "@components/site/Accordian.astro";
       vocal personalities.
     </p>
     <h1>4. Seal Point Siamese Cat</h1>
-    <Image src={SealPoint} alt="Seal Point Siamese Cat" />
+  <Image src={SealPoint} alt="Seal Point Siamese Cat" class="sealpoint-cat-img" />
     <p>
       Seal Point Siamese cats are one of the most common and recognizable types
       of Siamese cats. They have a cream or fawn-colored body with dark brown
@@ -84,7 +98,7 @@ import Accordian from "@components/site/Accordian.astro";
       nature.
     </p>
     <h1>5. Chocolate Point Siamese Cat</h1>
-    <Image src={ChocolatePoint} alt="Chocolate Point Siamese Cat" />
+  <Image src={ChocolatePoint} alt="Chocolate Point Siamese Cat" class="chocolatepoint-cat-img" />
     <p>
       Chocolate Point Siamese cats have a light fawn or cream-colored body with
       rich chocolate-colored points on their ears, face, paws, and tail. Their
@@ -93,7 +107,7 @@ import Accordian from "@components/site/Accordian.astro";
       their playful and affectionate personalities.
     </p>
     <h1>6. Blue Point Siamese Cat</h1>
-    <Image src={BluePoint} alt="Blue Point Siamese Cat" />
+  <Image src={BluePoint} alt="Blue Point Siamese Cat" class="bluepoint-cat-img" />
     <p>
       Blue Point Siamese cats feature a light gray or bluish-white body with
       darker blue-gray points on their ears, face, paws, and tail. Their eyes 
@@ -102,7 +116,7 @@ import Accordian from "@components/site/Accordian.astro";
       for their gentle and affectionate nature.
     </p>  
     <h1>7. Lilac Point Siamese Cat</h1>
-    <Image src={LilacPoint} alt="Lilac Point Siamese Cat" />
+  <Image src={LilacPoint} alt="Lilac Point Siamese Cat" class="lilacpoint-cat-img" />
     <p>
       Lilac Point Siamese cats have a pale, pinkish-gray body with lilac-colored
       points on their ears, face, paws, and tail. Their eyes are a vivid blue,
@@ -116,7 +130,7 @@ import Accordian from "@components/site/Accordian.astro";
   <section class="personality" id="personality"></section>
   <div class="content">
     
- <Image src={Dancing} alt="Dancing Siamese Cat" />
+ <Image src={Dancing} alt="Dancing Siamese Cat" class="dancing-cat-img" />
     <h2>Personality</h2>
   
     <p>
@@ -142,8 +156,21 @@ import Accordian from "@components/site/Accordian.astro";
         health issues, so regular check-ups with a veterinarian are essential to
         ensure their well-being.
       </p>
-
+<li>
+  <p>
     
+    <Accordian title="Fun Facts about Siamese Cats">
+      <ul>
+        <li>Siamese cats are one of the oldest and most recognizable cat breeds.</li>
+        <li>They are known for their striking blue eyes and distinctive color points.</li>
+        <li>Siamese cats are highly vocal and can be quite talkative.</li>
+        <li>They are social cats that enjoy the company of humans and other pets.</li>
+        <li>Siamese cats are intelligent and can be trained to perform tricks.</li>
+      </ul>
+    </Accordian>
+  </P>
+</li>
+     
     </div>    
     <SampleComponent client:load />
   </Container>
@@ -165,6 +192,7 @@ body {
   padding: 1rem;
   background-color: #f8f8f8;
   border-bottom: 2px solid #e7e7e7;
+  margin: 50px;
 }
 h1 {
   text-align: left;
@@ -193,9 +221,11 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .nav-branding {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #473134;
+  text-align: left;
+  margin-left: 2rem;
 }
 .nav-items {
   display: flex;
@@ -209,7 +239,7 @@ nav{
   }
   .nav-btn{
   padding: 8px 16px;
-  border: 2px solid #;
+  border: 2px solid ;
   background-color: #FFFBFA;
   color:#473134;
   font-weight: bold;
@@ -229,6 +259,33 @@ nav{
 .personality{
   margin-top: 2rem;
   border-top: 2px solid #e7e7e7;
-  padding-top: 1rem;                
+  padding-top: 1rem;   
+}             
 
-</style>
+.applehead-cat-img{
+  position: relative;
+  right: 900px;
+  max-width: 100vw;
+  width: 1200px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 50px;
+  
+}
+
+.traditional-cat-img{
+  position: relative;
+  left: 500px;
+  max-width: 100vw;
+  width: 1200px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 0;
+  
+}
+.wedge-cat-img{
+  position: relative;
+  right: ;
+}
+
+  </style>
