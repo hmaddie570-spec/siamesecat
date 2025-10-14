@@ -50,6 +50,7 @@ import Accordian from "@components/site/Accordian.astro";
     <h1> 1. Appleheaded Siamese Cats</h1>
     
   <Image src={AppleHead} alt="Applehead Siamese Cat" class="applehead-cat-img" />
+  
     <p>
       Applehead Siamese cats are known for their rounded heads, large ears, and
       almond-shaped blue eyes. They have a more traditional appearance compared
@@ -129,7 +130,7 @@ import Accordian from "@components/site/Accordian.astro";
     </section>
 
 
-  <section class="personality" id="personality"></section>
+  <section class="personality" id="personality">
   <div class="content">
     
  <Image src={Dancing} alt="Dancing Siamese Cat" class="dancing-cat-img" />
@@ -144,9 +145,10 @@ import Accordian from "@components/site/Accordian.astro";
       companions for families and individuals alike.
     </p>
   </div>    
+  </section>
     
 
-    <section class="care" id="care"></section>
+    <section class="care" id="care">
     <div class="content">
       <h2>Care</h2>
       <p>
@@ -158,6 +160,7 @@ import Accordian from "@components/site/Accordian.astro";
         health issues, so regular check-ups with a veterinarian are essential to
         ensure their well-being.
       </p>
+      
 <li>
   <p>
     
@@ -169,6 +172,7 @@ import Accordian from "@components/site/Accordian.astro";
         <li>They are social cats that enjoy the company of humans and other pets.</li>
         <li>Siamese cats are intelligent and can be trained to perform tricks.</li>
       </ul>
+      </section>
 
       <p>hellp</p>
     </Accordian>
@@ -207,8 +211,9 @@ h2 {
 }
 p {
   line-height: 1.6;
-  margin: 0 0 1rem 0;
+  margin-top: 20px;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -249,6 +254,7 @@ nav{
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    margin: 50px;
   }
   .nav-btn{
   padding: 8px 16px;
@@ -274,16 +280,13 @@ nav{
   border-top: 2px solid #e7e7e7;
   padding-top: 1rem;   
 }             
-
-.applehead-cat-img{
+.applehead-cat-img {
   display: block;
   width: 100%;
-  left: 600px;
   max-width: 800px;
   height: auto;
   object-fit: contain;
   margin: 50px auto 0 auto;
-  
 }
 
 .traditional-cat-img{
@@ -297,7 +300,21 @@ nav{
 }
 .wedge-cat-img{
   position: relative;
-  right: ;
+  right:300px ;
+  max-width: auto;
+  
 }
+.sealpoint-cat-img{
+  position: re;
+  left: 300px;
+  max-width: auto;
+}
+.chocolatepoint-cat-img{
+  position: 
+  right:300px;
+  max-width:auto;
+}
+
+
 /* Removed invalid 'title' CSS selector */
   </style>
