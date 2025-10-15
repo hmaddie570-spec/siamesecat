@@ -21,9 +21,18 @@ import Accordian from "@components/site/Accordian.astro";
        
        <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Purrvana </title>
+    
       <meta name="description" content="A comprehensive guide to Siamese cat breeds." />
     </head>
+    
+<nav>
+        <h2 class="nav-branding">Purrvana</h2>
+        <div class="nav-items">
+          <a href="#cat" class="nav-btn">Siamese Cats</a>
+          <a href="#personality" class="nav-btn">Purrsonality</a>
+          <a href="#care" class="nav-btn">Purrfect</a>
+        </div>
+      </nav>
 
     <header>
      
@@ -35,23 +44,15 @@ import Accordian from "@components/site/Accordian.astro";
 
 
 
-<nav>
-        <h2 class="nav-branding">Purrvana</h2>
-        <div class="nav-items">
-          <a href="#cat" class="nav-btn">Types Of Siamese Cats</a>
-          <a href="#personality" class="nav-btn">Purrsonality</a>
-          <a href="#care" class="nav-btn">Purrfect</a>
-        </div>
-      </nav>
 
 
       <section class="types" id="Types Of Siamese Cats"></section>
    
-    <h1> 1. Appleheaded Siamese Cats</h1>
+    <h1 class="header-1"> 1. Appleheaded Siamese Cats</h1>
     
   <Image src={AppleHead} alt="Applehead Siamese Cat" class="applehead-cat-img" />
   
-    <p>
+    <p class="applehead-description">
       Applehead Siamese cats are known for their rounded heads, large ears, and
       almond-shaped blue eyes. They have a more traditional appearance compared
       to the modern Siamese, with a sturdy build and a short, fine coat. Their
@@ -67,9 +68,10 @@ import Accordian from "@components/site/Accordian.astro";
     </Accordian>
     <section class="types" id="types"></section>
 
+<section class="traditional">
     <h1 >2. Traditional Siamese Cat</h1>
   <Image src={OgCat} alt="Traditional Siamese Cat" class="traditional-cat-img" />
-    <p>
+    <p class="trad-description">
       Traditional Siamese cats, also known as "old-style" or "classic" Siamese,
       have a more rounded body and a less extreme wedge-shaped head compared to
       modern Siamese cats. They often have a more robust build and a slightly
@@ -77,9 +79,13 @@ import Accordian from "@components/site/Accordian.astro";
       with a light-colored body and darker points, but the contrast may be less
       pronounced.
     </p>
-    <h1> Modern Wedge Siamese Cat </h1>
-  <Image src={Wedge} alt="Wedge Siamese Cat" class="wedge-cat-img" />
-    <p>
+</section>
+<section class="wedge-section">
+  <h1 class="modernwedge">3. Modern Wedge Siamese Cat</h1>
+
+  <div class="wedge-content">
+    <Image src={Wedge} alt="Wedge Siamese Cat" class="wedge-cat-img" />
+    <p class="wedge-description">
       Modern Wedge Siamese cats are characterized by their sleek, slender bodies
       and long, wedge-shaped heads. They have large ears that are set wide apart
       and striking blue almond-shaped eyes. Their coat is short and fine, with a
@@ -87,9 +93,11 @@ import Accordian from "@components/site/Accordian.astro";
       Modern Wedge Siamese cats are known for their elegant appearance and
       vocal personalities.
     </p>
-    <h1>4. Seal Point Siamese Cat</h1>
+  </div>
+</section>
+    <h1 class="sealpointheader">4. Seal Point Siamese Cat</h1>
   <Image src={SealPoint} alt="Seal Point Siamese Cat" class="sealpoint-cat-img" />
-    <p>
+    <p class="sealpoint">
       Seal Point Siamese cats are one of the most common and recognizable types
       of Siamese cats. They have a cream or fawn-colored body with dark brown
       (seal) points on their ears, face, paws, and tail. Their eyes are
@@ -97,7 +105,7 @@ import Accordian from "@components/site/Accordian.astro";
       head. Seal Point Siamese cats are known for their affectionate and social
       nature.
     </p>
-    <h1>5. Chocolate Point Siamese Cat</h1>
+    <h1 class="chocoheader">5. Chocolate Point Siamese Cat</h1>
   <Image src={ChocolatePoint} alt="Chocolate Point Siamese Cat" class="chocolatepoint-cat-img" />
     <p>
       Chocolate Point Siamese cats have a light fawn or cream-colored body with
@@ -203,8 +211,10 @@ body {
   margin: 50px;
 }
 h1 {
-  text-align: left;
+  font-size: 2.0rem;
   color: #473134;
+  text-align: left;
+  margin-left: -310px;
 }
 h2 {
   color: #473134;
@@ -265,6 +275,8 @@ nav{
   text-decoration: none;
   align-self:center;
   border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;  
+  margin-left: 10px;
 }
 .nav-btn:hover {
   text-decoration: underline;
@@ -280,42 +292,161 @@ nav{
   border-top: 2px solid #e7e7e7;
   padding-top: 1rem;   
 }             
-.applehead-cat-img {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  object-fit: contain;
-  margin: 50px auto 0 auto;
+
+.applehead-cat-img{
+  position:relative;
+  right:300px;
+  max-width:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
-.traditional-cat-img{
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  object-fit: contain;
-  margin: 50px auto 0 50px;
-  
-}
+  .traditional-cat-img{
+    position:relative;
+    left:300px;
+    max-width:auto;
+    margin-top: 50px;
+  }
+
 .wedge-cat-img{
   position: relative;
   right:300px ;
   max-width: auto;
+  margin-top: 100px;
+  
   
 }
 .sealpoint-cat-img{
-  position: re;
+  position:relative;
   left: 300px;
   max-width: auto;
+
 }
 .chocolatepoint-cat-img{
-  position: 
+  position:relative; 
+  right:300px;
+  max-width:auto;
+  margin-top: 100px;
+}
+.bluepoint-cat-img{
+  position: relative;
+  left: 300px;
+  max-width:auto:
+
+}
+
+.lilacpoint-cat-img{
+  position:relative;
   right:300px;
   max-width:auto;
 }
 
+.applehead-description{
+  flex:1;
+  position:relative;
+  left:500px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-215px;
+}
+.applehead-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header-1{
+  font-size: ;
+  text-align: left;
+  color: #473134;
+  margin-left: -310px;
+}
+.trad-description  {
+  flex:1;
+  position:relative;
+  right:500px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-215px;
+}
+.care{
+  margin-top: 2rem;
+  border-top: 2px solid #e7e7e7;
+  padding-top: 1rem;   
+}
+.dancing-cat-img{
+  max-width:400px;
+  height:auto;
+  display:block;
+  margin:0 auto 1rem auto;
+}
+.title{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 
+}   
 
-/* Removed invalid 'title' CSS selector */
+.wedge-description{
+  flex:1;
+  position:relative;
+  left:500px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;
+}
+  
+ 
+.trad-description{
+  flex:1;
+  position:relative;
+  right:500px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;
+}
+.sealpoint{
+  flex:1;
+  position:relative;   
+  right:500px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;  
+   
+}
+.modernwedge{
+  font-size: ;
+  text-align: left;
+  color: #473134;
+  margin-top: 100px;
+}
+.sealpointheader{
+  font-size: ;
+  text-align: left;
+  color: #473134;
+  margin-top: 200px;
+  margin-left: 310px;
+  position: relative;
+  margin
+}
+
+.lilacpoint{
+  
+}
+  flex:1;   
+ 
   </style>
