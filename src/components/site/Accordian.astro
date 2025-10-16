@@ -6,11 +6,40 @@ const {title} = Astro.props;
 <details>
 
 <summary> {title} </summary>
-<p> Fun Facts! </p>
+<ul>
+        <li>Siamese cats are one of the oldest and most recognizable cat breeds.</li>
+        <li>They are known for their striking blue eyes and distinctive color points.</li>
+        <li>Siamese cats are highly vocal and can be quite talkative.</li>
+        <li>They are social cats that enjoy the company of humans and other pets.</li>
+        <li>Siamese cats are intelligent and can be trained to perform tricks.</li>
+      </ul>
 <slot />
 
 </details>
 <style>
-
+    details {
+        background-color: #f9f9f9;
+        
+        border-radius: 4px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+    
+    li {
+        margin-bottom: 0.5rem;
+    }
     
 </style>

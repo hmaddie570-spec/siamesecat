@@ -18,58 +18,76 @@ import Accordian from "@components/site/Accordian.astro";
 <Layout title="Purrvana - Siamese Cats" description="A comprehensive guide to Siamese cat breeds.">
   <Container>
     <head>
-       
-       <meta charset="UTF-8" />
+      <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
       <meta name="description" content="A comprehensive guide to Siamese cat breeds." />
-    </head>
-    
-<nav>
-        <h2 class="nav-branding">Purrvana</h2>
+      <title>Purrvana</title>
+      <h1 class="title">Purrvana</h1>
+       <nav>
+        <h2 class="nav-branding"></h2>
         <div class="nav-items">
-          <a href="#cat" class="nav-btn">Siamese Cats</a>
+          <a href="#types" class="nav-btn">Siamese Cats</a>
           <a href="#personality" class="nav-btn">Purrsonality</a>
           <a href="#care" class="nav-btn">Purrfect</a>
         </div>
+
       </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Lacquer&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 
-    <header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+       
+    </head>
+    
+
+
+<body>
+  
+
+    <section class="intro" id="cat">
+      
+      
+
+    <h2 class="about">All About Siamese Cats!</h2>
+    <p class="introo">Siamese cats are one of the most recognizable and beloved cat breeds in the world. Known for
+      their striking blue eyes, sleek bodies, and distinctive color points, Siamese cats have a
+      rich history and a unique personality that sets them apart from other breeds. In this guide, 
+    </p>
+    </section>  
+ 
+
      
-    
-    
-
-
-
-
-
-
-
-
+  
       <section class="types" id="Types Of Siamese Cats"></section>
    
-    <h1 class="header-1"> 1. Appleheaded Siamese Cats</h1>
+    <h1 class="header-1"> 1. Appleheaded Siamese Cat</h1>
     
-  <Image src={AppleHead} alt="Applehead Siamese Cat" class="applehead-cat-img" />
+<Image src={AppleHead} alt="Applehead Siamese Cat" class="applehead-cat-img" />
   
     <p class="applehead-description">
+        
       Applehead Siamese cats are known for their rounded heads, large ears, and
       almond-shaped blue eyes. They have a more traditional appearance compared
       to the modern Siamese, with a sturdy build and a short, fine coat. Their
       coloration typically includes a cream or fawn body with darker points on
       the ears, face, paws, and tail.
     </p>
-    <Accordian title="Fun Facts about Appleheaded Siamese Cats">
-      <ul>
-        <li>They are known for their affectionate and social nature.</li>
-        <li>Applehead Siamese cats are often more vocal than other breeds.</li>
-        <li>They are intelligent and can be trained to perform tricks.</li>
-      </ul>
-    </Accordian>
+    
+    </section>
     <section class="types" id="types"></section>
 
 <section class="traditional">
-    <h1 >2. Traditional Siamese Cat</h1>
+    <h1 class="tradheader" >2. Traditional Siamese Cat</h1>
   <Image src={OgCat} alt="Traditional Siamese Cat" class="traditional-cat-img" />
     <p class="trad-description">
       Traditional Siamese cats, also known as "old-style" or "classic" Siamese,
@@ -80,10 +98,10 @@ import Accordian from "@components/site/Accordian.astro";
       pronounced.
     </p>
 </section>
-<section class="wedge-section">
-  <h1 class="modernwedge">3. Modern Wedge Siamese Cat</h1>
 
+<section class="wedge-section">
   <div class="wedge-content">
+    <h1 class="modernwedge">3. Modern Wedge Siamese Cat</h1>
     <Image src={Wedge} alt="Wedge Siamese Cat" class="wedge-cat-img" />
     <p class="wedge-description">
       Modern Wedge Siamese cats are characterized by their sleek, slender bodies
@@ -95,6 +113,7 @@ import Accordian from "@components/site/Accordian.astro";
     </p>
   </div>
 </section>
+
     <h1 class="sealpointheader">4. Seal Point Siamese Cat</h1>
   <Image src={SealPoint} alt="Seal Point Siamese Cat" class="sealpoint-cat-img" />
     <p class="sealpoint">
@@ -105,33 +124,35 @@ import Accordian from "@components/site/Accordian.astro";
       head. Seal Point Siamese cats are known for their affectionate and social
       nature.
     </p>
+
     <h1 class="chocoheader">5. Chocolate Point Siamese Cat</h1>
   <Image src={ChocolatePoint} alt="Chocolate Point Siamese Cat" class="chocolatepoint-cat-img" />
-    <p>
+    <p class="choco-description">
       Chocolate Point Siamese cats have a light fawn or cream-colored body with
       rich chocolate-colored points on their ears, face, paws, and tail. Their
       eyes are a vivid blue, and they possess the sleek, slender body and wedge-shaped
       head typical of Siamese cats. Chocolate Point Siamese cats are known for
       their playful and affectionate personalities.
     </p>
-    <h1>6. Blue Point Siamese Cat</h1>
+
+    <h1 class="bluepoint-header">6. Blue Point Siamese Cat</h1>
   <Image src={BluePoint} alt="Blue Point Siamese Cat" class="bluepoint-cat-img" />
-    <p>
+    <p class="bluepoint-description">
       Blue Point Siamese cats feature a light gray or bluish-white body with
       darker blue-gray points on their ears, face, paws, and tail. Their eyes 
       are a striking blue, and they have the characteristic sleek, slender body
       and wedge-shaped head of Siamese cats. Blue Point Siamese cats are known
       for their gentle and affectionate nature.
     </p>  
-    <h1>7. Lilac Point Siamese Cat</h1>
+
+    <h1 class="lilacpoint-header">7. Lilac Point Siamese Cat</h1>
   <Image src={LilacPoint} alt="Lilac Point Siamese Cat" class="lilacpoint-cat-img" />
-    <p>
+    <p class="lilac-description">
       Lilac Point Siamese cats have a pale, pinkish-gray body with lilac-colored
       points on their ears, face, paws, and tail. Their eyes are a vivid blue,
       and they possess the sleek, slender body and wedge-shaped head typical of
       Siamese cats. Lilac Point Siamese cats are known for their affectionate
       and social personalities.
-
 
    
     </p>  
@@ -152,6 +173,7 @@ import Accordian from "@components/site/Accordian.astro";
       owners. Siamese cats are also playful and energetic, making them great
       companions for families and individuals alike.
     </p>
+
   </div>    
   </section>
     
@@ -167,29 +189,29 @@ import Accordian from "@components/site/Accordian.astro";
         interactive play to keep them engaged. Siamese cats are prone to certain
         health issues, so regular check-ups with a veterinarian are essential to
         ensure their well-being.
+
       </p>
       
-<li>
-  <p>
+
+      
+
+  
     
     <Accordian title="Fun Facts about Siamese Cats">
-      <ul>
-        <li>Siamese cats are one of the oldest and most recognizable cat breeds.</li>
-        <li>They are known for their striking blue eyes and distinctive color points.</li>
-        <li>Siamese cats are highly vocal and can be quite talkative.</li>
-        <li>They are social cats that enjoy the company of humans and other pets.</li>
-        <li>Siamese cats are intelligent and can be trained to perform tricks.</li>
-      </ul>
-      </section>
-
-      <p>hellp</p>
     </Accordian>
-  </P>
-</li>
+  
+
      
-    </div>    
+    </div>   
+    </Container>
+    </section>
+    <footer>
+      <p>&copy; 2024 Purrvana. All rights reserved.</p>
+    </footer> 
+    </body>
     
-  </Container>
+  
+ 
   
 </Layout>
 
@@ -215,13 +237,17 @@ h1 {
   color: #473134;
   text-align: left;
   margin-left: -310px;
+  margin-top: 20px;
+  font family: 'Sniglet', cursive;
 }
 h2 {
   color: #473134;
+  font-family: DM Sans, sans-serif;
 }
 p {
   line-height: 1.6;
   margin-top: 20px;
+  font-family: dm sans, bold;
 }
 
 img {
@@ -230,10 +256,19 @@ img {
   display: block;
   align-items: l;
   margin: 0 auto 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: #CED9EF solid 4px;
+
 }
 a {
   color: #473134;
   text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+  align-self:center;
+  flex: space-between;
+
 }
 a:hover {
   text-decoration: underline;
@@ -246,6 +281,7 @@ a:hover {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 .nav-branding {
   font-size: 3rem;
@@ -265,6 +301,9 @@ nav{
     max-width: 1200px;
     width: 100%;
     margin: 50px;
+    right: 160px;
+    position: relative;
+    margin-top: 20px;
   }
   .nav-btn{
   padding: 8px 16px;
@@ -277,6 +316,8 @@ nav{
   border-radius: 8px;
   transition: background-color 0.3s, color 0.3s;  
   margin-left: 10px;
+  flex: space-between;
+  
 }
 .nav-btn:hover {
   text-decoration: underline;
@@ -284,13 +325,18 @@ nav{
 }   
 .types{
   margin-top: 2rem;
-  border-top: 2px solid #e7e7e7;
+  
   padding-top: 1rem;
+
 }
 .personality{
-  margin-top: 2rem;
+  margin-top: 150px;
   border-top: 2px solid #e7e7e7;
-  padding-top: 1rem;   
+  padding-top: 2rem;   
+  margin-bottom: 50px; 
+  font-family: 'DM Sans', sans-serif;
+
+
 }             
 
 .applehead-cat-img{
@@ -313,44 +359,47 @@ nav{
   position: relative;
   right:300px ;
   max-width: auto;
-  margin-top: 100px;
+  
   
   
 }
 .sealpoint-cat-img{
   position:relative;
-  left: 300px;
-  max-width: auto;
-
+    left:300px;
+    max-width:auto;
+    margin-top: 160px;
 }
 .chocolatepoint-cat-img{
   position:relative; 
-  right:300px;
+  right:310px;
   max-width:auto;
-  margin-top: 100px;
+  margin-top: 0px;
+
 }
 .bluepoint-cat-img{
   position: relative;
   left: 300px;
+  margin-top: 50px;
   max-width:auto:
-
 }
 
 .lilacpoint-cat-img{
   position:relative;
   right:300px;
   max-width:auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .applehead-description{
   flex:1;
   position:relative;
-  left:500px;
+  left:420px;
   max-width:600px;
   text-align:left;
   font-size:1.2rem;
   line-height:1.6;
-  margin-top:-215px;
+  margin-top:-230px;
 }
 .applehead-section {
   display: flex;
@@ -365,27 +414,35 @@ nav{
   text-align: left;
   color: #473134;
   margin-left: -310px;
+  margin-top: 20px;
+  position: relative;
+  top: 20px;
+  right: 145px;
+  font-family: 'Dms Sans', sans-serif;
 }
 .trad-description  {
   flex:1;
-  position:relative;
-  right:500px;
+  position:relative;   
+  right:0px;
   max-width:600px;
   text-align:left;
   font-size:1.2rem;
   line-height:1.6;
-  margin-top:-215px;
+  margin-top:-300px;  
 }
 .care{
-  margin-top: 2rem;
+  margin-top:-10px;
   border-top: 2px solid #e7e7e7;
-  padding-top: 1rem;   
+  padding-top: 2rem;   
+  margin-bottom: 50px;
+
 }
 .dancing-cat-img{
   max-width:400px;
   height:auto;
   display:block;
   margin:0 auto 1rem auto;
+  border:  #fdfbfb solid 4px;
 }
 .title{
   max-width: 1200px;
@@ -404,20 +461,56 @@ nav{
   font-size:1.2rem;
   line-height:1.6;
   margin-top:-300px;
+  top: 50px;
 }
   
  
 .trad-description{
-  flex:1;
-  position:relative;
+    flex:1;
+  position:relative;   
   right:500px;
+  left: -340px;
   max-width:600px;
-  text-align:left;
+  text-align:right;
   font-size:1.2rem;
   line-height:1.6;
-  margin-top:-300px;
+  margin-top:-320px; 
+  top: 65px;
 }
 .sealpoint{
+  flex:1;
+  position:relative;   
+  right:500px;
+  left: -420px;
+  max-width:600px;
+  text-align:right;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;  
+  top: 40px;
+   
+}
+.modernwedge{
+ font-size: ;
+  text-align:left;
+  color: #473134;
+  margin-top: 220px;
+  margin-left: -300px;
+  position: relative; 
+  flex:1;
+
+}
+.sealpointheader{
+  font-size: ;
+    text-align: left;
+    color: #473134;
+    margin-left: 590px;
+    margin-top: 50px;
+    position: relative;
+    top: 160px;
+  }
+
+.lilacpoint{
   flex:1;
   position:relative;   
   right:500px;
@@ -425,28 +518,137 @@ nav{
   text-align:left;
   font-size:1.2rem;
   line-height:1.6;
-  margin-top:-300px;  
-   
-}
-.modernwedge{
-  font-size: ;
-  text-align: left;
-  color: #473134;
-  margin-top: 100px;
-}
-.sealpointheader{
-  font-size: ;
-  text-align: left;
-  color: #473134;
-  margin-top: 200px;
-  margin-left: 310px;
-  position: relative;
-  margin
-}
-
-.lilacpoint{
+  margin-top:-300px;
   
 }
-  flex:1;   
- 
+.chocoheader{
+  font-size: ;
+  text-align:left;
+  color: #473134;
+  margin-top: 200px;
+  margin-left: -625px;
+  position: relative; 
+  flex:1;
+} 
+
+ .choco-description{
+  flex:1;
+  position:relative;
+  left:420px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;
+  top: 70px;
+ }
+
+ .bluepoint-description{
+    flex:1;
+  position:relative;   
+  right:500px;
+  left: -420px;
+  max-width:600px;
+  text-align:right;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px; 
+  top: 70px;
+ }
+
+ .lilac-description{ 
+  flex:1;
+  position:relative;   
+  left:420px;
+  max-width:600px;
+  text-align:left;
+  font-size:1.2rem;
+  line-height:1.6;
+  margin-top:-300px;
+  top: 75px;
+  } 
+  .bluepoint-header{
+    font-size: ;
+    text-align: left;
+    color: #473134;
+    margin-top: 200px;
+    margin-left: 590px;
+    position: relative;
+    top: 50px;
+  }
+  .lilacpoint-header{
+    font-size: ;
+  text-align:left;
+  color: #473134;
+  margin-top: 200px;
+  margin-left: -600px;
+  position: relative; 
+  flex:1;
+  top: 50px
+  }
+      
+  .title{
+    font-size: 4.0rem;
+    text-align: center;
+    color: #473134;
+    margin-top: 20px;
+    margin-bottom: px;
+    position: relative;
+    top: 40px;
+    font-family: 'Sniglet', cursive;
+
+    letter-spacing: 2px;
+    text-shadow: 4px 4px #CED9EF;
+  }
+  .tradheader{
+    font-size: ;
+    text-align: left;
+    color: #473134;
+    margin-left: 300px;
+    margin-top: px;
+    position: relative;
+    top: 50px;
+  }
+  .introo{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: 10px;
+  text-align: left;
+  color: #473134;
+  font family: 'Sniglet', cursive;
+}
+
+
+  .intro{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color:  #f8f8f8;            
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0,
+  0, 0.1);}
+
+  .about {
+  font-size: 2.0rem;
+  text-align: left;
+  color: #473134;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Crafty Girls";
+}
+  .intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 800px;   
+  margin-left: 10px;
+  text-align: left;
+  color: #473134;
+  font-family: DM Sans, sans-serif;
+} 
+  
+
+
   </style>
